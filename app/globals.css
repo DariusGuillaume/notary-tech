@@ -2,35 +2,61 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  :root {
+    --background: 255 255 255;
+    --foreground: 10 25 49;
+    --card: 255 255 255;
+    --card-foreground: 10 25 49;
+    --popover: 255 255 255;
+    --popover-foreground: 10 25 49;
+    --primary: 212 175 55;
+    --primary-foreground: 255 255 255;
+    --secondary: 10 25 49;
+    --secondary-foreground: 255 255 255;
+    --muted: 233 236 241;
+    --muted-foreground: 10 25 49;
+    --accent: 212 175 55;
+    --accent-foreground: 10 25 49;
+    --destructive: 220 38 38;
+    --destructive-foreground: 255 255 255;
+    --border: 203 213 225;
+    --input: 203 213 225;
+    --ring: 212 175 55;
+    --radius: 0.5rem;
+  }
 
-:root {
-  --dark-bg: #00204a;
-  --light-bg: #f6f7fb;
-  --primary-color: #ffd700;
-  --secondary-color: #00caf9;
-  --third-color: #54f3a6;
-  --fourth-color: #fee590;
-  --text-color: #a8a8a8;
-  --text-secondary: #c1c1c1;
-  --text-color-dark: #ffffff;
-  --text-color-light: #fcf3d4;
-  --title-color: #ffd700;
-  --border-color: #ffd700;
-  --border-color-dark: #003366;
-  --border-color-light: #ffd700;
-  --shadow: 10px 12px 48px rgba(0, 32, 74, 0.5);
+  .dark {
+    --background: 10 25 49;
+    --foreground: 255 255 255;
+    --card: 10 25 49;
+    --card-foreground: 255 255 255;
+    --popover: 10 25 49;
+    --popover-foreground: 255 255 255;
+    --primary: 212 175 55;
+    --primary-foreground: 10 25 49;
+    --secondary: 71 85 105;
+    --secondary-foreground: 255 255 255;
+    --muted: 51 65 85;
+    --muted-foreground: 203 213 225;
+    --accent: 212 175 55;
+    --accent-foreground: 255 255 255;
+    --destructive: 220 38 38;
+    --destructive-foreground: 255 255 255;
+    --border: 51 65 85;
+    --input: 51 65 85;
+    --ring: 212 175 55;
   }
-  
-  html {
-  box-sizing: border-box;
+}
+
+@layer base {
+  * {
+    @apply border-border;
   }
-  
   body {
-  color: var(--text-color);
-  margin: 0 !important;
-  max-width: 100%;
-  overflow-x: hidden;
-  padding: 0 !important;
-  touch-action: pan-y, pan-x;
-  transition: all 0.4s cubic-bezier(0.57, 0.25, 0.33, 1) 0s;
+    @apply bg-white text-foreground;
   }
+  .dark body {
+    @apply bg-navy-900 text-white;
+  }
+}

@@ -1,0 +1,32 @@
+
+:root {
+  --dark-bg: #00204a;
+  --light-bg: #f6f7fb;
+  --primary-color: #ffd700;
+  --secondary-color: #00caf9;
+  --third-color: #54f3a6;
+  --fourth-color: #fee590;
+  --text-color: #a8a8a8;
+  --text-secondary: #c1c1c1;
+  --text-color-dark: #ffffff;
+  --text-color-light: #fcf3d4;
+  --title-color: #ffd700;
+  --border-color: #ffd700;
+  --border-color-dark: #003366;
+  --border-color-light: #ffd700;
+  --shadow: 10px 12px 48px rgba(0, 32, 74, 0.5);
+  }
+  
+  html {
+  box-sizing: border-box;
+  }
+  
+  body {
+  color: var(--text-color);
+  margin: 0 !important;
+  max-width: 100%;
+  overflow-x: hidden;
+  padding: 0 !important;
+  touch-action: pan-y, pan-x;
+  transition: all 0.4s cubic-bezier(0.57, 0.25, 0.33, 1) 0s;
+  }

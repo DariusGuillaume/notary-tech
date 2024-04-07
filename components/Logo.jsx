@@ -7,7 +7,7 @@ const Logo = () => {
 
   return (
     <Link href="/">
-      {theme === 'light' ? (
+      {theme !== 'dark' ? (
         <Image
           src="/assets/vlt_logo_light.svg"
           alt="Light Logo"

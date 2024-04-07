@@ -37,7 +37,7 @@ const Hero = () => {
             <Badge
               containerStyles="absolute top-[24%] -left-[5rem]"
               icon={<RiBriefcase4Fill className="text-2xl text-primary" />}
-              endCountNum={10}
+              endCountNum={15}
               endCountText="+"
               badgeText="Years of Experience"
             />
@@ -48,7 +48,7 @@ const Hero = () => {
               icon={<RiTodoFill className="text-2xl text-primary" />}
               endCountNum={6}
               endCountText="k"
-              badgeText="Projects Completed"
+              badgeText="Happy Clients"
             />
             <HomeImage
               containerStyles="w-[510px] h-[462px]"

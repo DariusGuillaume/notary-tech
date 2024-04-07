@@ -4,13 +4,14 @@ import { useTheme } from 'next-themes';
 
 const Logo = () => {
   const { theme } = useTheme();
+  const logoAlt = 'VLT Logo';
 
   return (
     <Link href="/">
       {theme !== 'dark' ? (
         <Image
           src="/assets/vlt_logo_light.svg"
-          alt="Light Logo"
+          alt={logoAlt}
           width={135}
           height={50}
           className="rounded-lg"
@@ -18,7 +19,7 @@ const Logo = () => {
       ) : (
         <Image
           src="/assets/vlt_logo.svg"
-          alt="Dark Logo"
+          alt={logoAlt}
           width={135}
           height={50}
           className="rounded-lg"

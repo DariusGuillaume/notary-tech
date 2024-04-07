@@ -26,7 +26,7 @@ const Hero = () => {
          {/* buttons */}
          <div className='flex flex-col gap-y-3 md:flex-row gap-x-3 mx-auto xl:mx-0 mb-12'> 
          <Link href="/contact">
-  <Button className="gap-x-2 text-white dark:text-white">
+  <Button className="gap-x-2 text-white dark:text-white bg-blue-600">
     Contact Us <Send size={18} />
   </Button>
 </Link>
@@ -34,8 +34,11 @@ const Hero = () => {
          </div>
         </div>
         {/* <HomeImage /> */}
-        <div className='hidden xl:flex relative'> Home Image</div>
-
+        <div className='hidden xl:flex relative'> 
+        <HomeImage containerStyles = 'w-[510px] h-[462px] relative'
+        imageSource = '/assets/public_1/hero/hero.png'
+        />
+        </div>
         </div>
         {/*  icon*/}   
       <div className='hidden xl:flex absolute left-2/4 bottom-44 xl:bottom-12 animate-bounce'>

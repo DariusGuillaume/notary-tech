@@ -1,8 +1,10 @@
-import React from 'react'
+import Image from 'next/image'
 
-const HomeImage = () => {
+const HomeImage = ({ containerStyles, imageSource }) => {
   return (
-    <div>HomeImage</div>
+    <div className={containerStyles}>
+      <Image src={imageSource} fill priority alt='' />
+    </div>
   )
 }
 

@@ -2,7 +2,7 @@ import Link from 'next/link';
 import { Button } from './ui/Button';
 import { Send } from 'lucide-react';
 import React from 'react';
-import { RiTeamFill, RiTodoFill, RiArrowDownSLine, RiBriefcase4Fill } from 'react-icons/ri';
+import { RiArrowDownSLine, RiBriefcase4Fill, RiTodoFill } from 'react-icons/ri';
 import { BsBriefcaseFill } from 'react-icons/bs';
 import HomeImage from './HomeImage';
 import Badge from './Badge';
@@ -15,17 +15,18 @@ const Hero = () => {
           {/* text */}
           <div className="flex max-w-[600px] flex-col justify-center mx-auto xl:mx-0 text-center xl:text-left">
             <div className="text-sm uppercase font-semibold mb-4 text-primary tracking-[4px]">
-              Notary Services
+            Empowering Your Legal Transactions
             </div>
-            <h1 className="h1">We are here to help you</h1>
+            <h1 className="h1">Your Trusted Notary Professional</h1>
+
             <p className="subtitle max-w-[490px] mx-auto xl:mx-0">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in quam id purus mollis aliquam.
+              Valerie Lord-Tucker, founder of VLT Solutions, offers unparalleled expertise in notarial services. With over 15 years of experience as a field agent for various mortgage companies, Valerie specializes in loan signings, mortgage modifications, powers of attorney, trusts and wills, and real estate transactions.
             </p>
             {/* buttons */}
             <div className="flex flex-col gap-y-3 md:flex-row gap-x-3 mx-auto xl:mx-0 mb-12">
               <Link href="/contact">
                 <Button className="gap-x-2 text-white dark:text-white bg-blue-600">
-                  Contact Us <Send size={18} />
+                  Contact Valerie <Send size={18} />
                 </Button>
               </Link>
             </div>
@@ -44,7 +45,7 @@ const Hero = () => {
 
             {/* Badge 2 */}
             <Badge
-              containerStyles="absolute top-[80%] -left-[1rem] z-10"
+              containerStyles="absolute top-[50%] -right-[1rem] z-10"
               icon={<RiTodoFill className="text-2xl text-primary" />}
               endCountNum={6}
               endCountText="k"

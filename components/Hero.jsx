@@ -26,7 +26,7 @@ const Hero = () => {
          {/* buttons */}
          <div className='flex flex-col gap-y-3 md:flex-row gap-x-3 mx-auto xl:mx-0 mb-12'> 
          <Link href="/contact">
-  <Button className="gap-x-2">
+  <Button className="gap-x-2 text-white dark:text-white">
     Contact Us <Send size={18} />
   </Button>
 </Link>

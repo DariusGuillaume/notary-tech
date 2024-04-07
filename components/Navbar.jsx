@@ -28,6 +28,7 @@ const Navbar = ({ containerStyles, linkStyles, underlineStyles }) => {
             )}
             {link.name}
           </Link>
+          
         );
       })}
     </nav>

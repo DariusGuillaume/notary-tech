@@ -70,6 +70,9 @@
   @apply text-muted-foreground text-lg mb-8 font-semibold;
 }
 
+.badge{
+  @apply z-10 w-[200px] h-[60px] bg-white dark:backdrop-blur-[44px] shadow-2xl p-4 rounded-[10px] flex items-center gap-x-4; 
+}
 
 
 

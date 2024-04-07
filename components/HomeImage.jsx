@@ -1,11 +1,11 @@
-import Image from 'next/image'
+import Image from 'next/image';
 
 const HomeImage = ({ containerStyles, imageSource }) => {
   return (
-    <div className={containerStyles}>
-      <Image src={imageSource} fill priority alt='' />
+    <div className={`relative ${containerStyles}`}>
+      <Image src={imageSource} fill priority alt="" className="rounded-lg object-cover" />
     </div>
-  )
-}
+  );
+};
 
-export default HomeImage
+export default HomeImage;

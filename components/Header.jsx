@@ -1,6 +1,6 @@
 'use client';
 
-import React, {useState, useEffect} from 'react';
+import React, { useState, useEffect } from 'react';
 import ThemeToggler from './ThemeToggler';
 import Navbar from './Navbar';
 import Logo from './Logo';
@@ -34,6 +34,7 @@ const Header = () => {
               containerStyles="hidden xl:flex gap-x-8 items-center"
               linkStyles="relative hover:text-primary transition-all"
               underlineStyles="absolute left-0 top-full h-[2px] bg-gray-500 w-full"
+              activeLink={pathname}
             />
             <ThemeToggler />
             <div className="xl:hidden">

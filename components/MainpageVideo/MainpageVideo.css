@@ -1,0 +1,38 @@
+.mainpage-video__container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    border-radius: 1rem; /* Add rounded edges to the container */
+  }
+  
+  .mainpage-video__video {
+    width: 100%;
+    border-radius: 1rem; /* Add rounded edges to the video */
+    box-shadow: 0 0 2rem rgba(0, 0, 0, 0.2);
+  }
+  
+  @media (max-width: 1024px) {
+    .mainpage-video__container {
+      max-width: 100%;
+      padding: 0 1rem;
+      border-radius: 0.5rem; /* Adjust rounded edges for smaller screens */
+    }
+    
+    .mainpage-video__video {
+      border-radius: 0.5rem; /* Adjust rounded edges for smaller screens */
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .mainpage-video__container {
+      border-radius: 0.5rem; /* Adjust rounded edges for even smaller screens */
+    }
+    
+    .mainpage-video__video {
+      border-radius: 0.5rem; /* Adjust rounded edges for even smaller screens */
+    }
+  }

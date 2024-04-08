@@ -16,7 +16,13 @@ const Navbar = ({ containerStyles, linkStyles, underlineStyles }) => {
     <nav className={`${containerStyles}`}>
       {links.map((link, index) => {
         return (
-          <Link href={link.path} key={index} className={`${linkStyles}`}>
+          <Link
+            href={link.path}
+            key={index}
+            className={`${linkStyles} ${
+              pathname === link.path ? 'text-blue-600' : 'hover:text-blue-600'
+            }`}
+          >
             {link.path === pathname && (
               <motion.span
                 initial={{ y: '-100%' }}
@@ -28,7 +34,6 @@ const Navbar = ({ containerStyles, linkStyles, underlineStyles }) => {
             )}
             {link.name}
           </Link>
-          
         );
       })}
     </nav>

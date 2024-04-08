@@ -6,6 +6,7 @@ import { RiArrowDownSLine, RiBriefcase4Fill, RiTodoFill } from 'react-icons/ri';
 import { BsBriefcaseFill } from 'react-icons/bs';
 import HomeImage from './HomeImage';
 import Badge from './Badge';
+import MainpageVideo from './MainpageVideo/MainpageVideo';
 
 const Hero = () => {
   return (
@@ -15,10 +16,9 @@ const Hero = () => {
           {/* text */}
           <div className="flex max-w-[600px] flex-col justify-center mx-auto xl:mx-0 text-center xl:text-left">
             <div className="text-sm uppercase font-semibold mb-4 text-primary tracking-[4px]">
-            Empowering Your Legal Transactions
+              Empowering Your Legal Transactions
             </div>
             <h1 className="h1">Your Trusted Notary Professional</h1>
-
             <p className="subtitle max-w-[490px] mx-auto xl:mx-0">
               Valerie Lord-Tucker, founder of VLT Solutions, offers unparalleled expertise in notarial services. With over 15 years of experience as a field agent for various mortgage companies, Valerie specializes in loan signings, mortgage modifications, powers of attorney, trusts and wills, and real estate transactions.
             </p>
@@ -31,8 +31,6 @@ const Hero = () => {
               </Link>
             </div>
           </div>
-
-          {/* <HomeImage /> */}
           <div className="hidden xl:flex relative">
             {/* Badge 1 */}
             <Badge
@@ -42,7 +40,6 @@ const Hero = () => {
               endCountText="+"
               badgeText="Years of Experience"
             />
-
             {/* Badge 2 */}
             <Badge
               containerStyles="absolute top-[50%] -right-[1rem] z-10"
@@ -57,11 +54,14 @@ const Hero = () => {
             />
           </div>
         </div>
-
-        {/* icon */}
-        <div className="hidden xl:flex absolute left-2/4 bottom-44 xl:bottom-12 animate-bounce">
-          <RiArrowDownSLine className="text-3xl text-primary text-gray-500" />
+        {/* video */}
+        <div className="mt-12">
+          <MainpageVideo />
         </div>
+      </div>
+      {/* icon */}
+      <div className="hidden xl:flex absolute left-2/4 bottom-44 xl:bottom-12 animate-bounce">
+        <RiArrowDownSLine className="text-3xl text-primary text-gray-500" />
       </div>
     </section>
   );

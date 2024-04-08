@@ -19,7 +19,7 @@ const Hero = () => {
               Empowering Your Legal Transactions
             </div>
             <h1 className="h1">Your Trusted Notary Professional</h1>
-            <p className="subtitle max-w-[490px] mx-auto xl:mx-0">
+            <p className="subtitle max-w-[490px] mx-auto xl:mx-0 dark:text-gray-300">
               Valerie Lord-Tucker, founder of VLT Solutions, offers unparalleled expertise in notarial services. With over 15 years of experience as a field agent for various mortgage companies, Valerie specializes in loan signings, mortgage modifications, powers of attorney, trusts and wills, and real estate transactions.
             </p>
             {/* buttons */}

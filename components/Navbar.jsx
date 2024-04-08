@@ -20,19 +20,25 @@ const Navbar = ({ containerStyles, linkStyles, underlineStyles }) => {
             href={link.path}
             key={index}
             className={`${linkStyles} ${
-              pathname === link.path ? 'text-blue-600' : 'hover:text-blue-600'
+              pathname === link.path ? 'text-blue-600' : ''
             }`}
           >
+            <motion.span
+              initial={{ y: 0, color: 'inherit' }}
+              whileHover={{
+                y: -2,
+                color: 'rgb(37, 99, 235)',
+                transition: { duration: 0.2 },
+              }}
+            >
+              {link.name}
+            </motion.span>
             {link.path === pathname && (
               <motion.span
-                initial={{ y: '-100%' }}
-                animate={{ y: 0 }}
-                transition={{ type: 'tween' }}
                 layoutId="underline"
                 className={`${underlineStyles}`}
               />
             )}
-            {link.name}
           </Link>
         );
       })}

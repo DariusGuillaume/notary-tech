@@ -82,17 +82,3 @@
 
 
 
-.mainpage-video__container { 
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  overflow: visible;
-}
-
-.mainpage-video__video{
-  width : 95%;
-  border-radius: 4rem;
-  margin-top: -5rem;
-  z-index: 1;
-
-}

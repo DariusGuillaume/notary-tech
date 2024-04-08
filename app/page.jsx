@@ -1,13 +1,14 @@
 'use client';
+import About from "@/components/About";
 import Hero from "@/components/Hero";
-import MainpageVideo from "@/components/MainpageVideo/MainpageVideo";
-
 
 export default function Home() {
   return (
     <main>
-     <Hero />
-   
+      <Hero />
+      <div className="mt-24">
+        <About />
+      </div>
     </main>
   );
 }

@@ -10,7 +10,7 @@ import MainpageVideo from './MainpageVideo/MainpageVideo';
 
 const Hero = () => {
   return (
-    <section className="py-8 xl:py-16 h-[84vh] xl:pt-20 bg-hero bg-no-repeat bg-bottom bg-cover dark:bg-none">
+    <section className="py-8 xl:py-16 xl:pt-20 bg-hero bg-no-repeat bg-bottom bg-cover dark:bg-none">
       <div className="container mx-auto">
         <div className="flex justify-between gap-x-8">
           {/* text */}
@@ -56,6 +56,7 @@ const Hero = () => {
         </div>
         {/* video */}
         <div className="mt-12">
+
           <MainpageVideo />
         </div>
       </div>

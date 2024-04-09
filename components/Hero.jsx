@@ -24,12 +24,12 @@ const Hero = () => {
             </p>
             {/* buttons */}
             <div className="flex flex-col gap-y-3 md:flex-row gap-x-3 mx-auto xl:mx-0 mb-12">
-              <Link href="/contact">
-                <Button className="gap-x-2 text-white dark:text-white bg-blue-600">
-                  Contact Valerie <Send size={18} />
-                </Button>
-              </Link>
-            </div>
+      <Link href="/contact">
+        <Button className="gap-x-2 text-white dark:text-white bg-blue-600 hover:bg-black dark:hover:bg-blue-600">
+          Contact Valerie <Send size={18} />
+        </Button>
+      </Link>
+    </div>
           </div>
           <div className="hidden xl:flex relative">
             {/* Badge 1 */}

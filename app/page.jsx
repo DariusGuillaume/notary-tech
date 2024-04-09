@@ -15,7 +15,7 @@ export default function Home() {
       <div className="mt-12">
         <Testimonials />
       </div>
-      <CTA/>
+      <CTA />
     </main>
   );
 }
